@@ -21,8 +21,6 @@ const Trending = () => {
                 {
                     trendingData.map(trending => <TrendingContent trending={trending}/>)
                 }
-                
-
             </Slider>
         </div>
     );
