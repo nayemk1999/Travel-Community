@@ -1,12 +1,12 @@
 import React from 'react';
-import Explore from '../Explore/Explore';
+import Explores from '../Explore/Explores';
 import Header from '../Header/Header';
 
 const Home = () => {
     return (
         <div>
             <Header/>
-            <Explore/>
+            <Explores/>
         </div>
     );
 };

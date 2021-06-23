@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Explore = () => {
+const Explore = (props) => {
+    const {img, title} = props.explore
     return (
-        <div>
-           <h1>This Explore Section..................</h1> 
-           
+        <div className='col-md-2 mt-5'>
+            <img src={img} alt="" style={{height: '5vw'}}/>
+            <div className='explore-content'>
+                {title}
+            </div>
         </div>
     );
 };
