@@ -17,7 +17,7 @@ const NavBar = () => {
 
     return (
         <Navbar expand="lg" className={(isSticky || isCollapsed) ? "slide in py-1 show shadow-sm navbar navbar-expand-sm nav-bg navbar-light   fixed-top" : "slide out show navbar navbar-expand-sm navbar-light py-1 fixed-top "}>
-            <>
+            {/* <> */}
                 <Navbar.Brand to='/' > <Image style={{ height: '33px', width: '43px' }} src='https://www.wanderon.in/wanderon-logo.svg' /> <strong>..</strong></Navbar.Brand>
                 <Navbar.Toggle onClick={() => setCollapsed(!isCollapsed ? 'show' : null)} aria-controls="basic-navbar-nav" style={{ background: 'white' }} />
                 <Navbar.Collapse id="navbar-nav" className='navbar-content'>
@@ -43,7 +43,7 @@ const NavBar = () => {
                             </Nav.Link>
                         </Nav>
                 </Navbar.Collapse>
-            </>
+            {/* </> */}
         </Navbar>
     );
 };
