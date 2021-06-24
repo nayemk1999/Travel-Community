@@ -1,9 +1,8 @@
 import React from 'react';
+import './Carousels.css'
 
-
-
-const TrendingContent = (props) => {
-    const {biking, camping, bikingText, campingText,trekking, trekkingText, paragliding, paraglidingText, snowParadise, snowParadiseText, img, locationIcon, locationText, price, text, timeIcon, timeText} = props.trending;
+const CarouselsContent = (props) => {
+    const { biking, camping, bikingText, campingText, trekking, trekkingText, paragliding, paraglidingText, snowParadise, snowParadiseText, img, locationIcon, locationText, price, text, timeIcon, timeText } = props.propsData;
 
     const content = {
         width: "21vw",
@@ -16,7 +15,7 @@ const TrendingContent = (props) => {
         overflow: "hidden",
         display: "flex",
         alignItems: "flex-end",
-        justifyContent: "center"
+        justifyContent: "center",
     }
     return (
         <div className='slide-container'>
@@ -24,16 +23,16 @@ const TrendingContent = (props) => {
                 <div style={content}>
                     <div className='img-container'>
                         <div className='img-content'>
-                            <img style={{ width: "auto", height: " 1.5vw", marginRight: "8px" }} src={trekking || paragliding || snowParadise} alt="" />
-                            {trekkingText || paraglidingText || snowParadiseText}
+                            <img style={{ width: "auto", height: " 1.5vw", marginRight: "8px" }} src={camping || trekking || paragliding || snowParadise || biking} alt="" />
+                            {campingText || trekkingText || paraglidingText || snowParadiseText || bikingText}
                         </div>
                         <div className='img-content'>
-                            <img style={{ width: "auto", height: " 1.5vw", marginRight: "8px" }} src={trekking || paragliding || snowParadise} alt="" />
-                            {trekkingText || paraglidingText || snowParadiseText}
+                            <img style={{ width: "auto", height: " 1.5vw", marginRight: "8px" }} src={ trekking || paragliding || snowParadise || biking} alt="" />
+                            { trekkingText || paraglidingText || snowParadiseText || bikingText}
                         </div>
                         <div className='img-content'>
-                            <img style={{ width: "auto", height: " 1.5vw", marginRight: "8px" }} src={trekking || paragliding || snowParadise} alt="" />
-                            {trekkingText || paraglidingText || snowParadiseText}
+                            <img style={{ width: "auto", height: " 1.5vw", marginRight: "8px" }} src={trekking || paragliding || snowParadise || biking} alt="" />
+                            { trekkingText || paraglidingText || snowParadiseText || bikingText}
                         </div>
                     </div>
                 </div>
@@ -65,4 +64,4 @@ const TrendingContent = (props) => {
     );
 };
 
-export default TrendingContent;
+export default CarouselsContent;

@@ -9,6 +9,9 @@ import Testimonials from '../Testimonials/Testimonials';
 import Trending from '../Trending/Trending';
 import { Widget } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
+import WeekendTrips from '../WeekendTrips/WeekendTrips';
+import HimalayanEscapades from '../HimalayanEscapades/HimalayanEscapades';
+import CustomizeTrip from '../CustomizeTrip/CustomizeTrip';
 
 
 const Home = () => {
@@ -18,7 +21,11 @@ const Home = () => {
             <Header />
             <Explores />
             <Trending />
+            <WeekendTrips/>
+            <HimalayanEscapades/>
+            <Trending />
             <TalkSection />
+            <CustomizeTrip/>
             <Testimonials />
             <SocialReviews />
             <FooterTop />
