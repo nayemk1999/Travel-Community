@@ -20,9 +20,8 @@ const highLightData = [
 
 
 const RatingHighLight = () => {
-    console.log(highLightData);
     return (
-        <div className='row gx-5 mt-5'>
+        <div className='row gx-5 mt-5 highLight'>
             {
                 highLightData.map(highLight => <HighLight highLight={highLight}></HighLight>)
             }

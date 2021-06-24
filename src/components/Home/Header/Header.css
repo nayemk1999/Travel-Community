@@ -13,3 +13,9 @@
     -webkit-box-pack: end;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 600px) {
+    .header-container {
+        margin-top: -6vh !important;
+    }
+}

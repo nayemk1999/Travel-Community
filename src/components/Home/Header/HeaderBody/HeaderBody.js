@@ -5,8 +5,8 @@ import RatingHighLight from '../RatingHighLight/RatingHighLight';
 const HeaderBody = () => {
     return (
         <div>
-            <h1 className='text-white'>India's Coolest Travel Community</h1>
-            <h4 className='text-white mb-5 mt-2'> 
+            <h1 className='text-white head-title'>India's Coolest Travel Community</h1>
+            <h4 className='text-white mb-5 mt-2 typical-content'> 
                 <Typical
                     loop={Infinity}
                     wrapper="b"
